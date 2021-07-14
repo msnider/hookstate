@@ -677,10 +677,10 @@ export function DevTools<S>(state: State<S>): DevToolsExtensions {
 ///
 /// INTERNAL SYMBOLS (LIBRARY IMPLEMENTATION)
 ///
-
-const isDevelopmentMode = process !== undefined && process !== null && typeof process === 'object' &&
-    process.env !== undefined && process.env !== null && typeof process.env === 'object' &&
-    process.env.NODE_ENV === 'development'
+const isDevelopmentMode = false
+// const isDevelopmentMode = process !== undefined && process !== null && typeof process === 'object' &&
+//     process.env !== undefined && process.env !== null && typeof process.env === 'object' &&
+//     process.env.NODE_ENV === 'development'
 
 const self = Symbol('self')
 
